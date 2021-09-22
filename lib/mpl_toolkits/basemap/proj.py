@@ -3,12 +3,7 @@ from __future__ import (absolute_import, division, print_function)
 import numpy as np
 import pyproj
 import math
-try:
-    from inspect import cleandoc as dedent
-except ImportError:
-    # Deprecated as of version 3.1. Not quite the same
-    # as textwrap.dedent.
-    from matplotlib.cbook import dedent
+from inspect import cleandoc as dedent
 
 __version__ = '1.2.2+dev'
 _dg2rad = math.radians(1.)
